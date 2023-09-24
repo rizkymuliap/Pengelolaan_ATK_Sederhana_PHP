@@ -1,0 +1,11 @@
+1|Pensil Baru|1
+2|Buku 2|0
+3|Papan|0
+4|HVS|0
+5|Kerta Papan|0
+6|Buku|0
+7|Buku|0
+8|Buku|0
+9|Hvs|1
+10|as|0
+11|Buku 2|0

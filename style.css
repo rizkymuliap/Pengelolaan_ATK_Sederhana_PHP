@@ -1,0 +1,31 @@
+.header-background {
+    background-color: rgb(7, 199, 238);
+    color: white;
+}
+
+.tulisan-putih {
+    color: white;
+}
+
+/* BAGIAN JENIS ATK */
+/* Mengatur style dari CARD */
+
+.card {
+    width: 70%;
+}
+
+.section-body {
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+a.none-decoration {
+    color: white;
+}
+
+.section-body-update {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
