@@ -42,13 +42,17 @@
 
     <!-- Body Home Page -->
     <section>
-    <div class="container text-center position-absolute top-50">
+    <div class="container text-center position-absolute" style="margin-Top:10vh;">
         <div class="row">
             <div class="col">
-                1 of 2
+                <img src="./Gambar/Selamat_Datang.png" width="500vh">
             </div>
             <div class="col">
-                2 of 2
+                <h1 style="font-size:50px; color: #2060e8; font-weight: 700; margin-Top:15vh;">Selamat Datang</h1> <br /> <br />
+                <p style="font-size:20px; font-weight: 400;">
+                  Selamat datang dihalaman web pengelolaan Alat tulis kantor <br />
+                  Dibangun menggunakan PHP dengan penyimpanan data menggunakan file txt<br />
+                </p>
             </div>
         </div>
     </div>

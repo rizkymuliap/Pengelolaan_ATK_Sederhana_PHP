@@ -1,4 +1,4 @@
 1|Rizky M Perdana|Padang|089643621011|rizky@gmail.com|1
 2|Raihan Aprila|Bukittinggi|081363397349|raihan@gmail.com|0
 3|Vendor Baru|Vendor|089689239823|vendor@gmail.com|0
-4|as|as|as|as@gmail.com|1
+4|as baru|as|as|as@gmail.com|1
