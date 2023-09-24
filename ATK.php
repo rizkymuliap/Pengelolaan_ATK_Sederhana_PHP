@@ -208,28 +208,36 @@
     <?php
     if (isset($_POST['delete'])) {
       // Tombol delete ditekan, lakukan tindakan penghapusan di sini
-      $id_atk = $_POST['id_atk'];
+       $id_ATK = $_POST['id_atk'];
+  
   
       // Tampilkan pesan alert menggunakan JavaScript
       $filename = "./Data/dataATK.txt";
       $fp = fopen($filename, "r");
-  
+
       $lines = file($filename);
       $found = false;
       $new_lines = array();
-  
+
       foreach ($lines as $line) {
           $arr_data = explode('|', $line);
-          if ($arr_data[0] === $id_atk) {
-              // Jika ID ATK cocok, tandai data ini sebagai nonaktif (dengan nilai 0)
-              $arr_data[5] = 0;
+          if ($arr_data[0] === $id_ATK) {
+              // Jika email cocok, ambil data baru dari formulir
+              $name = $_POST['nama_atk'];
+              $jenis = $_POST['id_jenis_atk'];
+              $vendor = $_POST['id_vendor'];
+              $jumlah = $_POST['jml_stok'];
+          
+              // Update data dengan email yang cocok
+              $new_line = "$id_ATK|$name|$jenis|$vendor|$jumlah|0\n";
+              $new_lines[] = $new_line;
               $found = true;
+          } else {
+              // Tambahkan kembali data yang tidak berubah ke array baru
+              $new_lines[] = $line;
           }
-          // Ubah array data kembali menjadi baris teks dan simpan dalam $new_lines
-          $new_line = implode('|', $arr_data);
-          $new_lines[] = $new_line;
       }
-  
+
       if ($found) {
           // Tulis ulang file dengan data yang sudah diperbarui
           file_put_contents($filename, implode($new_lines));
@@ -237,7 +245,7 @@
       } else {
           echo "Data tidak ditemukan.";
       }
-  }  
+  }
     ?>
 
 

@@ -1,1 +1,5 @@
-1|Pensil 2b|1|1|12|0
+1|Pensil 2b|1|1|12|1
+2|Pensil 2b|1|2|100|0
+3|Pensil 2b faber casttle|9|1|100|0
+4|Pensil 2b|1|1|12|0
+5|Pensil 2b|9|1|21|1
